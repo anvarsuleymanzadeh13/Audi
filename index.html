@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audi</title>
+	<style>
+		div.container{
+			margin: 0;
+			width: 100%;
+			height: 100vh;
+			background-image: url(photos/yol.png);
+			background-size: 100% 100%;
+			box-sizing: border-box;
+			position: relative;
+			overflow: hidden;
+		}
+		*{  
+			margin: 0;
+			padding: 0;
+		}
+		div.audi{
+			width: 20%;
+			height: 35vh;
+			background-image: url(photos/audi.png);
+			background-size: 100%  100%;
+			margin: auto;
+			border-radius: 50%;
+			animation-name: test;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes test{
+			0%{
+				transform: translateY(0vh);
+			}
+			100%{
+				transform: translateY(6vh);
+			}
+		}
+		div.car{
+			width: 30%;
+			height: 35vh;
+			background-image: url(photos/car7.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 3%;
+			top: 60vh;
+			animation-name: teste;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+		}
+		@keyframes teste{
+			0%{
+				left: 3%;
+			}
+			100%{
+				left: 103%;
+			}
+		}
+		div.car1{
+			width: 33%;
+			height: 30vh;
+			background-image: url(photos/car5.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 103%;
+			top: 40vh;
+			animation-name: tester;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-delay: 4s;
+		}
+		@keyframes tester{
+			0%{
+				left: 103%;
+			}
+			100%{
+				left: 3%;
+			}
+		}
+		
+	</style>
+</head>
+<body>	
+		<div class="container">
+			<div class="audi"></div>
+			<div class="car1"></div>
+			<div class="car"></div>
+		</div>
+</body>
+</html>
